@@ -1,4 +1,4 @@
-//funtion called on entry-point
+//function called on entry-point
 function execCode() {
 //start-message
 console.log("start of code");
