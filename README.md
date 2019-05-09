@@ -1,2 +1,2 @@
 # lib
-libs (rdf) for solid
+libs (using rdflib) for solid
