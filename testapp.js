@@ -26,4 +26,5 @@ let org = store1.any(me, VCARD('org'), null, profile);
 console.log(name);
 console.log(role);
 console.log(org);
+//further things
 }
