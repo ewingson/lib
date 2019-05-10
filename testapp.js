@@ -16,7 +16,7 @@ const profile = me.doc();
 //setup namespace
 const VCARD = new $rdf.Namespace('http://www.w3.org/2006/vcard/ns#');
 //add data to store
-store1.add(me, VCARD('fn'), "Matthias configedit Evering", profile);
+store1.add(me, VCARD('fn'), "John C. Doe", profile);
 
 //get data
 let name = store1.any(me, VCARD('name'), null, profile);
