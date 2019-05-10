@@ -27,5 +27,5 @@ console.log(name);
 console.log(role);
 console.log(org);
 //further things
-//proceeding locally
+//proceed locally
 }
