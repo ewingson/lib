@@ -3,7 +3,7 @@ function execCode() {
 //start-message
 console.log("start of code");
 
-//dependency (making it possible)
+//dependency (making it possible, second dedicated or local)
 const $rdf = require('rdflib');
 //initialize graph
 const store1  = $rdf.graph();
@@ -27,6 +27,5 @@ console.log(name);
 console.log(role);
 console.log(org);
 //further things
-//still exploring, evaluating and examinating the possibilities for experiments
-//1. rdflib, 2. solid-auth-cli
+//after gathering info I think I will proceed locally
 }
