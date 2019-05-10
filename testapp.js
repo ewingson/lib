@@ -3,7 +3,7 @@ function execCode() {
 //start-message
 console.log("start of code");
 
-//dependency (continuing locally)
+//dependency
 const $rdf = require('rdflib');
 //initialize graph
 const store1  = $rdf.graph();
@@ -27,5 +27,5 @@ console.log(name);
 console.log(role);
 console.log(org);
 //further things
-//after gathering info I think I will proceed locally
+//proceeding locally
 }
