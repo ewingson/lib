@@ -26,6 +26,7 @@ let org = store1.any(me, VCARD('org'), null, profile);
 console.log(name);
 console.log(role);
 console.log(org);
-//further things
-//proceed locally
+//further things...
+//store match method (seems pretty much the core)
+//let quads = store.match(subject, predicate, object, document);
 }
