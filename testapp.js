@@ -27,6 +27,5 @@ console.log(name);
 console.log(role);
 console.log(org);
 //further things...
-//store match method (seems pretty much the core)
 //let quads = store.match(subject, predicate, object, document);
 }
