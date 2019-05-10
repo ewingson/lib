@@ -28,5 +28,5 @@ console.log(role);
 console.log(org);
 //further things
 //we' re in a queue at provider whether making rdflib in scripts accessible with the booked product is possible or not
-//the dedicated machine (which would enable it) is tied to the prototype server instance
+//the dedicated machine (which would enable it) is tied to the prototype server instance and cannot be used because of the reverse proxy configuration
 }
