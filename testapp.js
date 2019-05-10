@@ -3,7 +3,7 @@ function execCode() {
 //start-message
 console.log("start of code");
 
-//dependency (making it possible, second dedicated or local)
+//dependency (continuing locally)
 const $rdf = require('rdflib');
 //initialize graph
 const store1  = $rdf.graph();
