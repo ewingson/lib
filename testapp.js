@@ -3,7 +3,7 @@ function execCode() {
 //start-message
 console.log("start of code");
 
-//dependency
+//dependency (check queued)
 const $rdf = require('rdflib');
 //initialize graph
 const store1  = $rdf.graph();
