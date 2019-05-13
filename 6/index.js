@@ -1,4 +1,4 @@
-//dependency - express application generator
+//dependency - express framework
 const express = require('express')
 //initialize
 const app = express();
