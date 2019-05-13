@@ -27,5 +27,7 @@ console.log(name);
 console.log(role);
 console.log(org);
 //further things
+//...
+//build a quadrupel
 //let quads = store.match(subject, predicate, object, document);
 }
