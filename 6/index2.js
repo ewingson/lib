@@ -13,7 +13,7 @@ app.get('/', function (req, res) {
 var server = app.listen(8000, function () {
 //assign adress
    var host = server.address().address
-   //assign port
+//assign port
    var port = server.address().port
    
 //log      
