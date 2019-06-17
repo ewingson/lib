@@ -1,4 +1,4 @@
-//dependency
+//dependency - express framework
 var express = require('express');
 //initialize
 var app = express();
