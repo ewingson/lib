@@ -1,1 +1,8 @@
-//require-problem
+//this is a public repo for testing purposes of solid
+//we have made some local tests of the code
+//experiencing problems should and will be well-documented
+//we have a html with the needed script-source and the javascript-code is in a seperate file
+//in this snippet we have a problem with the required dependency
+//the affected line is #6 the require doesn' t work properly
+//this may be due to an incorrect setup or adjustment of nodejs
+//we are working on this, promised
