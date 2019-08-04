@@ -1,0 +1,6 @@
+  {
+         idp : "https://solidweb.org",
+    username : "ewingson",
+    password : "", // optional
+        base : ""
+  }
