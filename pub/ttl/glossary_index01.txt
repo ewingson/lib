@@ -1,0 +1,10 @@
+glossary_index01.txt
+{
+doc01.ttl#man			pics/man200x200.png
+doc02.ttl#woman			pics/woman200x200.png
+doc03.ttl#couple		pics/manwoman200x200.png
+org01.ttl#meisdata		pics/meisdata200x200.png
+product01.ttl#coolFavicon	pics/favicon.ico
+illustration01.ttl		pics/illustration02.png
+}
+https://mevering.solid.community/profile/card#me
