@@ -1,0 +1,58 @@
+@base <https://www.serverproject.de/> .
+@prefix home: <https://www.serverproject.de/> .
+@prefix cont: <https://solidweb.org/public/schemas/contains/> .
+@prefix hasf: <https://solidweb.org/public/schemas/hasfile/> .
+
+<https://www.serverproject.de/> home:cont <https://www.serverproject.de/download/> .
+
+<https://www.serverproject.de/> home:cont <https://www.serverproject.de/internal/> .
+
+<https://www.serverproject.de/> home:cont <https://www.serverproject.de/subsites/> .
+
+<https://www.serverproject.de/> home:cont <https://www.serverproject.de/links/> .
+
+<https://www.serverproject.de/> home:hasf <https://www.serverproject.de/about.htm> .
+
+<https://www.serverproject.de/> home:hasf <https://www.serverproject.de/contact.htm> .
+
+<https://www.serverproject.de/> home:hasf <https://www.serverproject.de/impressum.htm> .
+
+<https://www.serverproject.de/download/> home:hasf <https://www.serverproject.de/download/hoerprobe-herr-der-gezeiten.htm> .
+
+<https://www.serverproject.de/download/> home:hasf <https://www.serverproject.de/download/also-sprach-gardobaldo.htm> .
+
+<https://www.serverproject.de/download/> home:hasf <https://www.serverproject.de/download/herr-der-gezeiten.htm> .
+
+<https://www.serverproject.de/download/> home:hasf <https://www.serverproject.de/download/bernie-the-rat.htm> .
+
+<https://www.serverproject.de/download/> home:hasf <https://www.serverproject.de/download/audio-sugardope-0.htm> .
+
+<https://www.serverproject.de/download/> home:hasf <https://www.serverproject.de/download/psych-o-rama-monologue-17.htm> .
+
+<https://www.serverproject.de/internal/> home:hasf <https://www.serverproject.de/internal/guestbook-archive.htm> .
+
+<https://www.serverproject.de/internal/> home:hasf <https://www.serverproject.de/internal/my-next-opera-slitaz.htm> .
+
+<https://www.serverproject.de/internal/> home:hasf <https://www.serverproject.de/internal/curriculum-vitae.htm> .
+
+<https://www.serverproject.de/internal/> home:hasf <https://www.serverproject.de/internal/order-herr-der-gezeiten.htm> .
+
+<https://www.serverproject.de/internal/> home:hasf <https://www.serverproject.de/internal/bookmarks.htm> .
+
+<https://www.serverproject.de/subsites/> home:hasf <https://www.serverproject.de/subsites/t3-zero.htm> .
+
+<https://www.serverproject.de/subsites/> home:hasf <https://www.serverproject.de/subsites/t5-meisdata.htm> .
+
+<https://www.serverproject.de/subsites/> home:hasf <https://www.serverproject.de/subsites/t7-project-mx.htm> .
+
+<https://www.serverproject.de/subsites/> home:hasf <https://www.serverproject.de/subsites/driveby.htm> .
+
+<https://www.serverproject.de/links/> home:hasf <https://www.serverproject.de/links/blog.htm> .
+
+<https://www.serverproject.de/links/> home:hasf <https://www.serverproject.de/links/experienced-involvement.htm> .
+
+<https://www.serverproject.de/links/> home:hasf <https://www.serverproject.de/links/social.htm> .
+
+<https://www.serverproject.de/links/> home:hasf <https://www.serverproject.de/links/shopping.htm> .
+
+<https://www.serverproject.de/links/> home:hasf <https://www.serverproject.de/links/via.htm> .
