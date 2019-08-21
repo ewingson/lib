@@ -1,0 +1,24 @@
+{
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+@prefix wdrs: <http://www.w3.org/2007/05/powder-s#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+
+<>
+a foaf:Document ;
+foaf:name "A Document that describes a Person literally identified as 'woman'" ;
+dcterms:description "A collection of RDF sentences that describe a Person literally identified (or labeled) as 'woman'" ;
+foaf:primaryTopic <#woman> .
+
+<#woman>
+rdf:type foaf:Person ;
+foaf:name "woman" ;
+foaf:knows <doc01.ttl#man>, <doc03.ttl#couple> ;
+foaf:depiction <https://www.serverproject.de/etc/freax/files/ttl/pics/woman200x200.png> ;
+gr:seeks <product01.ttl#coolFavicon> ;
+wdrs:describedby <> .
+}
