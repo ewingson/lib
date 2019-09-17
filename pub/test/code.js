@@ -51,5 +51,6 @@ console.log (i+":"+line[i]+line[i].length);
 
     });
 }
+//build link-array
 //SPARQL
 }
