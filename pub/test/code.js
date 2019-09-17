@@ -1,3 +1,4 @@
+//to identify links in a doc and add them to markbook
 function openFile(callBack){
   var element = document.createElement('input');
   element.setAttribute('type', "file");
@@ -50,5 +51,5 @@ console.log (i+":"+line[i]+line[i].length);
 
     });
 }
-
+//SPARQL
 }
