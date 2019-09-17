@@ -1,0 +1,4 @@
+some text
+<a href = 'https://solidweb.org'>home</a>
+<a href = 'https://solid.github.io/information/'>project</a>
+some more text
