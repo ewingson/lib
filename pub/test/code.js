@@ -1,4 +1,4 @@
-//to identify links in a doc and add them to markbook
+//to identify links in a given doc and add them to markbook
 function openFile(callBack){
   var element = document.createElement('input');
   element.setAttribute('type', "file");
