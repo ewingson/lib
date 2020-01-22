@@ -6,13 +6,13 @@ function openFile(callBack){
   element.onchange = function(){
       readText(this,callBack);
       document.body.removeChild(this);
-      }
+      }//end function (L6)
 
   element.style.display = 'none';
   document.body.appendChild(element);
 
   element.click();
-}
+}//end function openFile (L2)
 
 function readText(filePath,callBack) {
     var reader;
@@ -21,20 +21,20 @@ function readText(filePath,callBack) {
     } else {
         alert('file APIs not supported. case fallback.');
         return false;
-    }
+    }//end else
     var output = ""; //placeholder for text output
     if(filePath.files && filePath.files[0]) {           
         reader.onload = function (e) {
             output = e.target.result;
             callBack(output);
-        };//end onload()
+        };//end onload() (L27)
         reader.readAsText(filePath.files[0]);
     }//end if html5 filelist support
     else { //this is where you could fallback to Java Applet, Flash or similar
         return false;
-    }       
+    }//end else      
     return true;
-}
+}//end function readText (L17)
 
 function execCode() {
 console.log ("start of code");
@@ -47,10 +47,12 @@ document.getElementById('btnOpen').onclick = function(){
 	var line = textArea.value.split("\n");
 for(var i = 0;i < line.length-1;i++){
 console.log (i+":"+line[i]+line[i].length);
-}
+}//end for (L48)
 
-    });
-}
+    });//end function openFile (L43)
+}//end function onclick (L42)
+	
 //build link-array
 //SPARQL_markbook
-}
+	
+}//end function execCode (L39)
