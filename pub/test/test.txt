@@ -1,4 +1,4 @@
 some text
-<a href = 'https://solidweb.org'>home</a>
-<a href = 'https://solid.github.io/information/'>project</a>
+<a href = 'https://ewingson.solidweb.org'>home</a>
+<a href = 'https://solid.github.io'>project</a>
 some more text
