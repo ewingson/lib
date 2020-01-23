@@ -37,20 +37,20 @@ function readText(filePath,callBack) {
 }//end function readText (L17)
 
 function execCode() {
-console.log ("start of code");
+    console.log ("start of code");
 
-document.getElementById('btnOpen').onclick = function(){
-    openFile(function(txt){
-        document.getElementById('tbMain').value = txt;
-	//console.log (txt);
-	var textArea = document.getElementById('tbMain');
-	var line = textArea.value.split("\n");
-for(var i = 0;i < line.length-1;i++){
-console.log (i+":"+line[i]+line[i].length);
-}//end for (L48)
+    document.getElementById('btnOpen').onclick = function(){
+        openFile(function(txt){
+            document.getElementById('tbMain').value = txt;
+	    //console.log (txt);
+	    var textArea = document.getElementById('tbMain');
+	    var line = textArea.value.split("\n");
+            for(var i = 0;i < line.length-1;i++){
+                console.log (i+":"+line[i]+line[i].length);
+            }//end for (L48)
 
-    });//end function openFile (L43)
-}//end function onclick (L42)
+        });//end function openFile (L43)
+    }//end function onclick (L42)
 	
 //build link-array
 //SPARQL_markbook
