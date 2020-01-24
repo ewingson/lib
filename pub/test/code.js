@@ -52,7 +52,7 @@ function execCode() {
         });//end function openFile (L43)
     }//end function onclick (L42)
 	
-//build link-array
+//build link-array (substr etc)
 //SPARQL_markbook
 	
 }//end function execCode (L39)
