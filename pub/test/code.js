@@ -53,6 +53,6 @@ function execCode() {
     }//end function onclick (L42)
 	
 //build link-array (substr etc)
-//SPARQL_markbook
+//markbook add turtle, PATCH INSERT DATA{}
 	
 }//end function execCode (L39)
