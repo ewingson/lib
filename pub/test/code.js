@@ -6,7 +6,7 @@ function openFile(callBack){
   element.onchange = function(){
       readText(this,callBack);
       document.body.removeChild(this);
-      }//end function (L6)
+      }//end function onchange (L6)
 
   element.style.display = 'none';
   document.body.appendChild(element);
@@ -27,7 +27,7 @@ function readText(filePath,callBack) {
         reader.onload = function (e) {
             output = e.target.result;
             callBack(output);
-        };//end onload() (L27)
+        };//end function onload() (L27)
         reader.readAsText(filePath.files[0]);
     }//end if html5 filelist support
     else { //this is where you could fallback to Java Applet, Flash or similar
@@ -52,7 +52,7 @@ function execCode() {
         });//end function openFile (L43)
     }//end function onclick (L42)
 	
-//build link-array (substr etc)
-//markbook add turtle, PATCH INSERT DATA{}
+    //build link-array (substr etc)
+    //markbook add turtle, PATCH INSERT DATA{}
 	
 }//end function execCode (L39)
