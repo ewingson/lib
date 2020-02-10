@@ -1,17 +1,17 @@
 //to identify links in a given doc and add them to markbook
 function openFile(callBack){
-  var element = document.createElement('input');
-  element.setAttribute('type', "file");
-  element.setAttribute('id', "btnOpenFile");
-  element.onchange = function(){
-      readText(this,callBack);
-      document.body.removeChild(this);
-      }//end function onchange (L6)
+	var element = document.createElement('input');
+	element.setAttribute('type', "file");
+  	element.setAttribute('id', "btnOpenFile");
+  	element.onchange = function(){
+    	readText(this,callBack);
+    	document.body.removeChild(this);
+    }//end function onchange (L6)
 
-  element.style.display = 'none';
-  document.body.appendChild(element);
+  	element.style.display = 'none';
+  	document.body.appendChild(element);
 
-  element.click();
+  	element.click();
 }//end function openFile (L2)
 
 function readText(filePath,callBack) {
