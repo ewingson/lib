@@ -38,21 +38,42 @@ function readText(filePath,callBack) {
 
 function execCode() {
     console.log ("start of code");
-
     document.getElementById('btnOpen').onclick = function(){
         openFile(function(txt){
+			hit = new Array();
             document.getElementById('tbMain').value = txt;
-	    //console.log (txt);
-	    var textArea = document.getElementById('tbMain');
-	    var line = textArea.value.split("\n");
-            for(var i = 0;i < line.length-1;i++){
-                console.log (i+":"+line[i]+line[i].length);
-            }//end for (L48)
+	    	//console.log (txt);
+	    	var textArea = document.getElementById('tbMain');
+	    	var line = textArea.value.split("\n");
+        	for(var i = 0;i < line.length-1;i++){
+            	console.log (i+":"+line[i]+line[i].length);
 
-        });//end function openFile (L43)
+				for (var j=0; j<line[i].length; j++)
+					{
+					//search for "<a href = \'"
+					var expression=line[i].substr(j,11);
+					if (expression == "<a href = \'") 
+						{
+						//console.log("hit");
+						var anfang = j+11;
+						for (var k=anfang; k<line[i].length; k++)
+							{
+							if (line[i].substr(k,1) == "\'")
+								{
+								//console.log ("the end");
+								var ende = k;
+								hit[i] = 1;
+								console.log("true:"+line[i].substr(anfang, ende-anfang));
+								}//end if k
+							else { hit[i] = 0; }
+							}//end for k
+						}//end if expression
+				
+					}//end for j
+			}//end for i
+       	});//end function openFile (L43)
     }//end function onclick (L42)
-	
-    //build link-array (substr etc)
+    
     //markbook add turtle, PATCH INSERT DATA{}
 	
 }//end function execCode (L39)
