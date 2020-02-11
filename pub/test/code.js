@@ -52,7 +52,7 @@ function execCode()
     {
         openFile(function(txt)
         {
-            hit = new Array();
+            var hit = new Array();
             document.getElementById('tbMain').value = txt;
             //console.log (txt);
             var textArea = document.getElementById('tbMain');
@@ -76,7 +76,7 @@ function execCode()
                                 //console.log ("the end");
                                 var ende = k;
                                 hit[i] = 1;
-                                console.log("true:"+line[i].substr(anfang, ende-anfang));
+                                console.log(hit[i]+":"+line[i].substr(anfang, ende-anfang));
                             }//end if k
                             else { hit[i] = 0; }
                         }//end for k
