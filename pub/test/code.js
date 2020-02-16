@@ -17,6 +17,7 @@ function maininit(id, zeile, link, title)
     <> <http://purl.org/dc/terms/references> <${no}> .
     }`
     //to examine:
+    await Sleep(200);
     solid.auth.fetch(source, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/sparql-update' },
@@ -144,6 +145,7 @@ function execCode()
                 console.log (title1[m]);
 
                 maininit(m, zeile1[m], link1[m], title1[m]);
+		await Sleep(200);
 	    }       
        	});//end function openFile (L43)
     }//end function onclick (L42)	
