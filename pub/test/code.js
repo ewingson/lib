@@ -53,6 +53,10 @@ function execCode()
         openFile(function(txt)
         {
             var hit = new Array();
+            var id = 0;
+            var zeile = new Array();
+            var link = new Array();
+            var title = new Array();
             document.getElementById('tbMain').value = txt;
             //console.log (txt);
             var textArea = document.getElementById('tbMain');
@@ -77,10 +81,22 @@ function execCode()
                                 var ende = k;
                                 hit[i] = 1;
                                 console.log(hit[i]+":"+line[i].substr(anfang, ende-anfang));
-				break;
-				    
-				//here add turtle
-				    
+                                if (line[i].substr(k+1,1) == ">")
+                                {
+                                    for (var l=k+2; l<line[i].length; l++)
+                                    {
+                                        if (line[i].substr(l, 1) == "<")
+                                        {
+                                            id += 1;
+                                            title[id] = line[i].substr(k+2, l-(k+2));
+                                            link[id] = line[i].substr(anfang, ende-anfang);
+                                            zeile[id] = i;
+                                            console.log(line[i].substr(k+2, l-(k+2)));
+                                            break;
+                                        }
+                                    }
+                                }
+                                break;
                             }//end if k
                             else { hit[i] = 0; }
                         }//end for k
@@ -88,6 +104,19 @@ function execCode()
 				
                 }//end for j
             }//end for i
+            var laenge = id;
+            for (var m = 1; m<laenge+1; m++)
+            {
+                console.log (m);
+                console.log (zeile[m]);
+                console.log (link[m]);
+                console.log (title[m]);
+
+                //here add turtle insert
+            }
+
+            
+
        	});//end function openFile (L43)
     }//end function onclick (L42)
     
