@@ -80,7 +80,7 @@ function execCode()
                                 //console.log ("the end");
                                 var ende = k;
                                 hit[i] = 1;
-                                console.log(hit[i]+":"+line[i].substr(anfang, ende-anfang));
+                                //console.log(hit[i]+":"+line[i].substr(anfang, ende-anfang));
                                 if (line[i].substr(k+1,1) == ">")
                                 {
                                     for (var l=k+2; l<line[i].length; l++)
@@ -91,7 +91,7 @@ function execCode()
                                             title[id] = line[i].substr(k+2, l-(k+2));
                                             link[id] = line[i].substr(anfang, ende-anfang);
                                             zeile[id] = i;
-                                            console.log(line[i].substr(k+2, l-(k+2)));
+                                            //console.log(line[i].substr(k+2, l-(k+2)));
                                             break;
                                         }
                                     }
@@ -113,10 +113,7 @@ function execCode()
                 console.log (title[m]);
 
                 //here add turtle insert
-            }
-
-            
-
+	    }       
        	});//end function openFile (L43)
     }//end function onclick (L42)
     
