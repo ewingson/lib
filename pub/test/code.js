@@ -1,4 +1,11 @@
 //to identify links in a given doc and add them to markbook
+
+function maininit(id, zeile, link, title)
+{
+console.log("here"+id+" "+zeile+" "+link+" "+title);
+//PATCH INSERT DATA goes here
+}
+
 function openFile(callBack)
 {
     var element = document.createElement('input');
@@ -53,10 +60,10 @@ function execCode()
         openFile(function(txt)
         {
             var hit = new Array();
-            var id = 0;
-            var zeile = new Array();
-            var link = new Array();
-            var title = new Array();
+            var id1 = 0;
+            var zeile1 = new Array();
+            var link1 = new Array();
+            var title1 = new Array();
             document.getElementById('tbMain').value = txt;
             //console.log (txt);
             var textArea = document.getElementById('tbMain');
@@ -87,10 +94,10 @@ function execCode()
                                     {
                                         if (line[i].substr(l, 1) == "<")
                                         {
-                                            id += 1;
-                                            title[id] = line[i].substr(k+2, l-(k+2));
-                                            link[id] = line[i].substr(anfang, ende-anfang);
-                                            zeile[id] = i;
+                                            id1 += 1;
+                                            title1[id1] = line[i].substr(k+2, l-(k+2));
+                                            link1[id1] = line[i].substr(anfang, ende-anfang);
+                                            zeile1[id1] = i;
                                             //console.log(line[i].substr(k+2, l-(k+2)));
                                             break;
                                         }
@@ -104,19 +111,16 @@ function execCode()
 				
                 }//end for j
             }//end for i
-            var laenge = id;
+            var laenge = id1;
             for (var m = 1; m<laenge+1; m++)
             {
                 console.log (m);
-                console.log (zeile[m]);
-                console.log (link[m]);
-                console.log (title[m]);
+                console.log (zeile1[m]);
+                console.log (link1[m]);
+                console.log (title1[m]);
 
-                //here add turtle insert
+                maininit(m, zeile1[m], link1[m], title1[m]);
 	    }       
        	});//end function openFile (L43)
-    }//end function onclick (L42)
-    
-    //markbook add turtle, PATCH INSERT DATA{}
-	
+    }//end function onclick (L42)	
 }//end function execCode (L39)
