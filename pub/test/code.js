@@ -77,6 +77,7 @@ function execCode()
                                 var ende = k;
                                 hit[i] = 1;
                                 console.log(hit[i]+":"+line[i].substr(anfang, ende-anfang));
+				break;
 				    
 				//here add turtle
 				    
