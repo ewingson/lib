@@ -4,7 +4,7 @@ function maininit(id, zeile, link, title)
 {
     console.log("here"+id+" "+zeile+" "+link+" "+title);
     //PATCH INSERT DATA goes here
-    var no = "#" + Math.random() + "_" + id
+    var no = "#" + Math.random() + "_" + id;
     //to examine:
     let source = template.profile.bookmarkInstance
     let date = new Date().toISOString();
