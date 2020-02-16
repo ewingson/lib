@@ -2,8 +2,34 @@
 
 function maininit(id, zeile, link, title)
 {
-console.log("here"+id+" "+zeile+" "+link+" "+title);
-//PATCH INSERT DATA goes here
+    console.log("here"+id+" "+zeile+" "+link+" "+title);
+    //PATCH INSERT DATA goes here
+    var no = "#" + Math.random() + "_" + id
+    //to examine:
+    let source = template.profile.bookmarkInstance
+    let date = new Date().toISOString();
+    const query = ` INSERT DATA {
+    <${no}> a <http://www.w3.org/2002/01/bookmark#Bookmark> ;
+    <http://purl.org/dc/terms/title>   """${title}""" ;
+    <http://xmlns.com/foaf/0.1/maker>   <${template.profile.webId}> ;
+    <http://purl.org/dc/terms/created>  "${date}"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://www.w3.org/2002/01/bookmark#recalls> <${link}> .
+    <> <http://purl.org/dc/terms/references> <${no}> .
+    }`
+    //to examine:
+    solid.auth.fetch(source, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/sparql-update' },
+        body: query,
+        credentials: 'include',
+        }).then((ret) => {
+        console.log("finished", ret)
+        location.reload()
+        }).catch(err => {
+        console.log("error updating", source, err)
+        })
+    })
+
 }
 
 function openFile(callBack)
