@@ -6,12 +6,12 @@ function maininit(id, zeile, link, title)
     //PATCH INSERT DATA goes here
     var no = "#" + Math.random() + "_" + id;
     //to examine:
-    let source = template.profile.bookmarkInstance
+    let source = 'https://ewingson.solidweb.org/public/bookmarks.ttl';
     let date = new Date().toISOString();
     const query = ` INSERT DATA {
     <${no}> a <http://www.w3.org/2002/01/bookmark#Bookmark> ;
     <http://purl.org/dc/terms/title>   """${title}""" ;
-    <http://xmlns.com/foaf/0.1/maker>   <${template.profile.webId}> ;
+    <http://xmlns.com/foaf/0.1/maker>   <https://ewingson.solidweb.org/profile/card#me> ;
     <http://purl.org/dc/terms/created>  "${date}"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://www.w3.org/2002/01/bookmark#recalls> <${link}> .
     <> <http://purl.org/dc/terms/references> <${no}> .
@@ -28,8 +28,6 @@ function maininit(id, zeile, link, title)
         }).catch(err => {
         console.log("error updating", source, err)
         })
-    })
-
 }
 
 function openFile(callBack)
