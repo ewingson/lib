@@ -2,6 +2,7 @@
 
 function maininit(id, zeile, link, title)
 {
+    for (var n=0; n<15; n++) { console.log ("."); }
     console.log("here"+id+" "+zeile+" "+link+" "+title);
     //PATCH INSERT DATA goes here
     var no = "#" + Math.random() + "_" + id;
@@ -17,7 +18,7 @@ function maininit(id, zeile, link, title)
     <> <http://purl.org/dc/terms/references> <${no}> .
     }`
     //to examine:
-    await Sleep(200);
+    for (n=0; n<15; n++) { console.log ("."); }
     solid.auth.fetch(source, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/sparql-update' },
@@ -29,6 +30,11 @@ function maininit(id, zeile, link, title)
         }).catch(err => {
         console.log("error updating", source, err)
         })
+        for (n=0; n<15; n++) { console.log ("."); }
+}
+
+function Sleep(milliseconds) {
+   return new Promise(resolve => setTimeout(resolve, milliseconds));
 }
 
 function openFile(callBack)
@@ -96,6 +102,7 @@ function execCode()
             for(var i = 0;i < line.length-1;i++)
             {
                 console.log (i+":"+line[i]+line[i].length);
+                //await Sleep(200);
 
                 for (var j=0; j<line[i].length; j++)
                 {
@@ -143,9 +150,9 @@ function execCode()
                 console.log (zeile1[m]);
                 console.log (link1[m]);
                 console.log (title1[m]);
-
+                //await Sleep(200);
                 maininit(m, zeile1[m], link1[m], title1[m]);
-		await Sleep(200);
+                //await Sleep(200);
 	    }       
        	});//end function openFile (L43)
     }//end function onclick (L42)	
