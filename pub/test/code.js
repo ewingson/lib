@@ -2,12 +2,12 @@
 
 function maininit(id, zeile, link, title)
 {
-    for (var n=0; n<15; n++) { console.log ("."); }
+    for (var n=0; n<25; n++) { console.log ("."); }
     console.log("here"+id+" "+zeile+" "+link+" "+title);
     //PATCH INSERT DATA goes here
     var no = "#" + Math.random() + "_" + id;
     //to examine:
-    let source = 'https://ewingson.solidweb.org/public/bookmarks.ttl';
+    let source = 'https://ewingson.solidweb.org/public/eighteenlix.ttl';
     let date = new Date().toISOString();
     const query = ` INSERT DATA {
     <${no}> a <http://www.w3.org/2002/01/bookmark#Bookmark> ;
@@ -18,7 +18,7 @@ function maininit(id, zeile, link, title)
     <> <http://purl.org/dc/terms/references> <${no}> .
     }`
     //to examine:
-    for (n=0; n<15; n++) { console.log ("."); }
+    for (n=0; n<25; n++) { console.log ("."); }
     solid.auth.fetch(source, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/sparql-update' },
@@ -30,7 +30,7 @@ function maininit(id, zeile, link, title)
         }).catch(err => {
         console.log("error updating", source, err)
         })
-        for (n=0; n<15; n++) { console.log ("."); }
+        for (n=0; n<25; n++) { console.log ("."); }
 }
 
 function Sleep(milliseconds) {
