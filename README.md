@@ -1,4 +1,4 @@
 # lib
 libs for solid
 
-//moved to gitlab 2020-03
+//moved to gitlab march twenty-twenty
