@@ -2,13 +2,18 @@
 
 function maininit(id, zeile, link, title)
 {
+    //pseudo-sleep
     for (var n=0; n<25; n++) { console.log ("."); }
+    //print line
     console.log("here"+id+" "+zeile+" "+link+" "+title);
     //PATCH INSERT DATA goes here
+    //set id variable
     var no = "#" + Math.random() + "_" + id;
     //to examine:
+    //writefile name
     let source = 'https://ewingson.solidweb.org/public/eighteenlix.ttl';
     let date = new Date().toISOString();
+    //set querytext
     const query = ` INSERT DATA {
     <${no}> a <http://www.w3.org/2002/01/bookmark#Bookmark> ;
     <http://purl.org/dc/terms/title>   """${title}""" ;
@@ -18,7 +23,9 @@ function maininit(id, zeile, link, title)
     <> <http://purl.org/dc/terms/references> <${no}> .
     }`
     //to examine:
+    //pseudo-sleep
     for (n=0; n<25; n++) { console.log ("."); }
+    //fire query
     solid.auth.fetch(source, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/sparql-update' },
@@ -30,6 +37,7 @@ function maininit(id, zeile, link, title)
         }).catch(err => {
         console.log("error updating", source, err)
         })
+	//pseudo-sleep
         for (n=0; n<25; n++) { console.log ("."); }
 }
 
@@ -86,24 +94,31 @@ function readText(filePath,callBack)
 function execCode()
 {
     console.log ("start of code");
+    //onclick
     document.getElementById('btnOpen').onclick = function()
     {
+	//open file(name)
         openFile(function(txt)
         {
+	    //initialize variables	
             var hit = new Array();
             var id1 = 0;
             var zeile1 = new Array();
             var link1 = new Array();
             var title1 = new Array();
+	    //which data ?
             document.getElementById('tbMain').value = txt;
             //console.log (txt);
+	    //set source doc code
             var textArea = document.getElementById('tbMain');
+	    //line by line
             var line = textArea.value.split("\n");
+	    //loop over the lines
             for(var i = 0;i < line.length-1;i++)
             {
                 console.log (i+":"+line[i]+line[i].length);
                 //await Sleep(200);
-
+                //loop over actual line
                 for (var j=0; j<line[i].length; j++)
                 {
                     //search for "<a href = \'"
@@ -112,6 +127,7 @@ function execCode()
                     {
                         //console.log("hit");
                         var anfang = j+11;
+			//nested loop for end character
                         for (var k=anfang; k<line[i].length; k++)
                         {
                             if (line[i].substr(k,1) == "\'")
@@ -120,12 +136,14 @@ function execCode()
                                 var ende = k;
                                 hit[i] = 1;
                                 //console.log(hit[i]+":"+line[i].substr(anfang, ende-anfang));
+				//suche linktext
                                 if (line[i].substr(k+1,1) == ">")
                                 {
                                     for (var l=k+2; l<line[i].length; l++)
                                     {
                                         if (line[i].substr(l, 1) == "<")
                                         {
+					    //set array variables
                                             id1 += 1;
                                             title1[id1] = line[i].substr(k+2, l-(k+2));
                                             link1[id1] = line[i].substr(anfang, ende-anfang);
