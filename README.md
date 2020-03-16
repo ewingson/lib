@@ -1,4 +1,4 @@
 # lib
 libs for solid
 
-//moved to gitlab march twenty-twenty
+//moved in parts to gitlab march twenty-twenty
