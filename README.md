@@ -1,4 +1,5 @@
 # lib
 libs for solid
 
-//moved in parts to gitlab march twenty-twenty
+//march 2020
+//moved in parts to https://gitlab.com/ewingson/lib
