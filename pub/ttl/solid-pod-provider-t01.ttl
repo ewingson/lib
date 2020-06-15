@@ -1,4 +1,4 @@
-@prefix des: <https://www.serverproject.de/ev/des#> .
+@prefix des: <https://www.serverproject.de/ev/voc#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -6,61 +6,61 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 <https://www.serverproject.de/ev/one.html>
-des:id "1"^^xsd:string;
+voc:id "1"^^xsd:string;
 dc:title "inrupt.net";
-des:details [
-des:url "https://inrupt.net/";
-des:icon "https://inrupt.com/themes/custom/solid/logo.svg";
-des:policyURL "https://inrupt.net";
-des:description "inrupt.net is a public Solid server provided by Inrupt, Inc."
+voc:details [
+voc:url "https://inrupt.net/";
+voc:icon "https://inrupt.com/themes/custom/solid/logo.svg";
+voc:policyURL "https://inrupt.net";
+voc:description "inrupt.net is a public Solid server provided by Inrupt, Inc."
 ] .
 
 <https://www.serverproject.de/ev/two.html>
-des:id "2"^^xsd:string;
+voc:id "2"^^xsd:string;
 dc:title "solid.community";
-des:details [
-des:url "https://solid.community/";
-des:icon "https://solid.inrupt.com/themes/custom/solid/logo.svg";
-des:policyURL "https://solid.community";
-des:description "solid.community is a public server for early adopters of Solid."
+voc:details [
+voc:url "https://solid.community/";
+voc:icon "https://solid.inrupt.com/themes/custom/solid/logo.svg";
+voc:policyURL "https://solid.community";
+voc:description "solid.community is a public server for early adopters of Solid."
 ] .
 
 <https://www.serverproject.de/ev/three.html>
-des:id "3"^^xsd:string;
+voc:id "3"^^xsd:string;
 dc:title "dev.inrupt.net";
-des:details [
-des:url "https://dev.inrupt.net/";
-des:icon "https://solid.inrupt.com/themes/custom/solid/logo.svg";
-des:policyURL "https://inrupt.net";
-des:description "dev.inrupt.net is a public Solid development server of Inrupt, Inc."
+voc:details [
+voc:url "https://dev.inrupt.net/";
+voc:icon "https://solid.inrupt.com/themes/custom/solid/logo.svg";
+voc:policyURL "https://inrupt.net";
+voc:description "dev.inrupt.net is a public Solid development server of Inrupt, Inc."
 ] .
 
 <https://www.serverproject.de/ev/four.html>
-des:id "4"^^xsd:string;
+voc:id "4"^^xsd:string;
 dc:title "solidweb.org";
-des:details [
-des:url "https://solidweb.org/";
-des:icon "https://www.serverproject.de/logo2.png";
-des:policyURL "https://www.serverproject.de/files/solidweb_org_terms.txt";
-des:description "solidweb.org is a public Solid server based in Germany which is in an experimental state."
+voc:details [
+voc:url "https://solidweb.org/";
+voc:icon "https://www.serverproject.de/logo2.png";
+voc:policyURL "https://www.serverproject.de/files/solidweb_org_terms.txt";
+voc:description "solidweb.org is a public Solid server based in Germany which is in an experimental state."
 ] .
 
 <https://www.serverproject.de/ev/five.html>
-des:id "5"^^xsd:string;
+voc:id "5"^^xsd:string;
 dc:title "solid.authing";
-des:details [
-des:url "https://solid.authing.cn/";
-des:icon "https://usercontents.authing.cn/client/logo@2.png";
-des:policyURL "https://solid.authing.cn";
-des:description "solid.authing is a public Solid server deployed in China."
+voc:details [
+voc:url "https://solid.authing.cn/";
+voc:icon "https://usercontents.authing.cn/client/logo@2.png";
+voc:policyURL "https://solid.authing.cn";
+voc:description "solid.authing is a public Solid server deployed in China."
 ] .
 
 <https://www.serverproject.de/ev/six.html>
-des:id "6"^^xsd:string;
+voc:id "6"^^xsd:string;
 dc:title "solid.open.ac.uk";
-des:details [
-des:url "https://solid.open.ac.uk/";
-des:icon "https://www.liberaldictionary.com/wp-content/uploads/2018/12/open-university.png";
-des:policyURL "http://www.open.ac.uk";
-des:description "solid.open.ac.uk is a public Solid server based at the UK's Open University."
+voc:details [
+voc:url "https://solid.open.ac.uk/";
+voc:icon "https://www.liberaldictionary.com/wp-content/uploads/2018/12/open-university.png";
+voc:policyURL "http://www.open.ac.uk";
+voc:description "solid.open.ac.uk is a public Solid server based at the UK's Open University."
 ] .
