@@ -5,7 +5,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
-<https://www.serverproject.de/one>
+<https://www.serverproject.de/ev/one.html>
 des:id "1"^^xsd:string;
 dc:title "inrupt.net";
 des:details [
@@ -15,7 +15,7 @@ des:policyURL "https://inrupt.net";
 des:description "inrupt.net is a public Solid server provided by Inrupt, Inc."
 ] .
 
-<https://www.serverproject.de/two>
+<https://www.serverproject.de/ev/two.html>
 des:id "2"^^xsd:string;
 dc:title "solid.community";
 des:details [
@@ -25,7 +25,7 @@ des:policyURL "https://solid.community";
 des:description "solid.community is a public server for early adopters of Solid."
 ] .
 
-<https://www.serverproject.de/three>
+<https://www.serverproject.de/ev/three.html>
 des:id "3"^^xsd:string;
 dc:title "dev.inrupt.net";
 des:details [
@@ -35,7 +35,7 @@ des:policyURL "https://inrupt.net";
 des:description "dev.inrupt.net is a public Solid development server of Inrupt, Inc."
 ] .
 
-<https://www.serverproject.de/four>
+<https://www.serverproject.de/ev/four.html>
 des:id "4"^^xsd:string;
 dc:title "solidweb.org";
 des:details [
@@ -45,7 +45,7 @@ des:policyURL "https://www.serverproject.de/files/solidweb_org_terms.txt";
 des:description "solidweb.org is a public Solid server based in Germany which is in an experimental state."
 ] .
 
-<https://www.serverproject.de/five>
+<https://www.serverproject.de/ev/five.html>
 des:id "5"^^xsd:string;
 dc:title "solid.authing";
 des:details [
@@ -55,7 +55,7 @@ des:policyURL "https://solid.authing.cn";
 des:description "solid.authing is a public Solid server deployed in China."
 ] .
 
-<https://www.serverproject.de/six>
+<https://www.serverproject.de/ev/six.html>
 des:id "6"^^xsd:string;
 dc:title "solid.open.ac.uk";
 des:details [
