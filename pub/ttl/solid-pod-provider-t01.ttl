@@ -64,3 +64,43 @@ voc:icon "https://www.liberaldictionary.com/wp-content/uploads/2018/12/open-univ
 voc:policyURL "http://www.open.ac.uk";
 voc:description "solid.open.ac.uk is a public Solid server based at the UK's Open University."
 ] .
+
+<https://www.serverproject.de/ev/seven.html>
+voc:id "7"^^xsd:string;
+dc:title "solid.pldn.nl";
+voc:details [
+voc:url "https://solid.pldn.nl/";
+voc:icon "https://solid.inrupt.com/themes/custom/solid/logo.svg";
+voc:policyURL "https://solid.pldn.nl";
+voc:description "solid.pldn.nl is an experimental public Solid server based in the Netherlands."
+] .
+
+<https://www.serverproject.de/ev/eight.html>
+voc:id "8"^^xsd:string;
+dc:title "solid.openlinksw.com:8444/";
+voc:details [
+voc:url "https://solid.openlinksw.com:8444/";
+voc:icon "https://solid.inrupt.com/themes/custom/solid/logo.svg";
+voc:policyURL "https://solid.openlinksw.com:8444/";
+voc:description "solid.openlinksw.com:8444 is a public Solid server running 4.x deployed by OpenLink Software Inc., U.S."
+] .
+
+<https://www.serverproject.de/ev/nine.html>
+voc:id "9"^^xsd:string;
+dc:title "solid.openlinksw.com:8445";
+voc:details [
+voc:url "https://solid.openlinksw.com:8445/";
+voc:icon "https://solid.inrupt.com/themes/custom/solid/logo.svg";
+voc:policyURL "https://solid.openlinksw.com:8445/";
+voc:description "solid.openlinksw.com:8444 is a public Solid server running 5.x deployed by OpenLink Software Inc., U.S."
+] .
+
+<https://www.serverproject.de/ev/ten.html>
+voc:id "10"^^xsd:string;
+dc:title "ld.solidbase.info";
+voc:details [
+voc:url "https://ld.solidbase.info/";
+voc:icon "https://solid.inrupt.com/themes/custom/solid/logo.svg";
+voc:policyURL "https://solid.pldn.nl";
+voc:description "ld.solidbase.info is a public Solid server hosted by ecobytes.net, Germany."
+] .
