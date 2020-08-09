@@ -91,8 +91,8 @@ dc:title "ld.solidbase.info";
 voc:details [
 voc:url "https://ld.solidbase.info/";
 voc:icon "https://solid.inrupt.com/themes/custom/solid/logo.svg";
-voc:policyURL "https://solid.pldn.nl";
-voc:description "ld.solidbase.info is a public Solid server hosted by ecobytes.net, Germany."
+voc:policyURL "https://solidbase.info";
+voc:description "ld.solidbase.info was a public Solid server hosted by ecobytes.net, Germany."
 ] .
 
 <https://www.serverproject.de/ev/ten.html>
