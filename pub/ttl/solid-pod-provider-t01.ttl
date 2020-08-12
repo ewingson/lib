@@ -82,7 +82,7 @@ voc:details [
 voc:url "https://solid.openlinksw.com:8445/";
 voc:icon "https://solid.inrupt.com/themes/custom/solid/logo.svg";
 voc:policyURL "https://solid.openlinksw.com:8445";
-voc:description "solid.openlinksw.com:8444 is a public Solid server running 5.x deployed by OpenLink Software Inc., U.S."
+voc:description "solid.openlinksw.com:8445 is a public Solid server running 5.x deployed by OpenLink Software Inc., U.S."
 ] .
 
 <https://www.serverproject.de/ev/nine.html>
