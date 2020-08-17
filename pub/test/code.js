@@ -3,7 +3,7 @@
 function maininit(id, zeile, link, title)
 {
     //pseudo-sleep
-    for (var n=0; n<25; n++) { console.log ("."); }
+    for (var n=0; n<250; n++) { console.log ("."); }
     //print line
     console.log("here"+id+" "+zeile+" "+link+" "+title);
     //PATCH INSERT DATA goes here
@@ -24,7 +24,7 @@ function maininit(id, zeile, link, title)
     }`
     //to examine:
     //pseudo-sleep
-    for (n=0; n<25; n++) { console.log ("."); }
+    for (n=0; n<250; n++) { console.log ("."); }
     //fire query
     solid.auth.fetch(source, {
         method: 'PATCH',
@@ -38,7 +38,7 @@ function maininit(id, zeile, link, title)
         console.log("error updating", source, err)
         })
 	//pseudo-sleep
-        for (n=0; n<25; n++) { console.log ("."); }
+        for (n=0; n<250; n++) { console.log ("."); }
 }
 
 function Sleep(milliseconds) {
