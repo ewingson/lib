@@ -11,13 +11,13 @@ function maininit(id, zeile, link, title)
     var no = "#" + Math.random() + "_" + id;
     //to examine:
     //writefile name
-    let source = 'https://ewingson.solidweb.org/public/eighteenlix.ttl';
+    let source = 'https://testpro.solidweb.org/public/eighteenlix.ttl';
     let date = new Date().toISOString();
     //set querytext
     const query = ` INSERT DATA {
     <${no}> a <http://www.w3.org/2002/01/bookmark#Bookmark> ;
     <http://purl.org/dc/terms/title>   """${title}""" ;
-    <http://xmlns.com/foaf/0.1/maker>   <https://ewingson.solidweb.org/profile/card#me> ;
+    <http://xmlns.com/foaf/0.1/maker>   <https://testpro.solidweb.org/profile/card#me> ;
     <http://purl.org/dc/terms/created>  "${date}"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://www.w3.org/2002/01/bookmark#recalls> <${link}> .
     <> <http://purl.org/dc/terms/references> <${no}> .
