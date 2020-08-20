@@ -97,7 +97,7 @@ voc:description "ld.solidbase.info was a public Solid server hosted by ecobytes.
 
 <https://www.serverproject.de/ev/ten.html>
 voc:id "10"^^xsd:string;
-dc:title "solid.authing";
+dc:title "solid.authing.cn";
 voc:details [
 voc:url "https://solid.authing.cn/";
 voc:icon "https://usercontents.authing.cn/client/logo@2.png";
