@@ -41,6 +41,7 @@ function maininit(id, zeile, link, title)
         for (n=0; n<250; n++) { console.log ("."); }
 }
 
+//not used yet
 function Sleep(milliseconds) {
    return new Promise(resolve => setTimeout(resolve, milliseconds));
 }
