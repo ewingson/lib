@@ -3,4 +3,4 @@
 
 <#this>
 
-dc:title "eighteenlix.ttl"^^xsd:string; .
+dc:title "eighteenlix.ttl"^^xsd:string .
