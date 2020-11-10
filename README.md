@@ -1,2 +1,2 @@
 # lib
-libs for solid
+libs for solid (experimental work)
