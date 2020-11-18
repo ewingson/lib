@@ -87,12 +87,12 @@ voc:description "solid.openlinksw.com:8444 is a public Solid server running 5.x 
 
 <https://www.serverproject.de/ev/nine.html>
 voc:id "9"^^xsd:string;
-dc:title "ld.solidbase.info";
+dc:title "trinpod.us";
 voc:details [
-voc:url "https://ld.solidbase.info/";
-voc:icon "https://solid.inrupt.com/themes/custom/solid/logo.svg";
-voc:policyURL "https://solid.pldn.nl";
-voc:description "ld.solidbase.info is a public Solid server hosted by ecobytes.net, Germany."
+voc:url "https://trinpod.us/";
+voc:icon "https://trinpod.us/img/gmx_logo.5a794ad6.png";
+voc:policyURL "https://graphmetrix.com/terms";
+voc:description "trinpod.us is a public Solid server provided by Graphmetrix, U.S.A.."
 ] .
 
 <https://www.serverproject.de/ev/ten.html>
@@ -123,4 +123,14 @@ voc:url "https://solid.community/";
 voc:icon "https://solid.inrupt.com/themes/custom/solid/logo.svg";
 voc:policyURL "https://solid.community";
 voc:description "solid.community was a public server for early adopters of Solid."
+] .
+
+<https://www.serverproject.de/ev/thirteen.html>
+voc:id "13"^^xsd:string;
+dc:title "ld.solidbase.info";
+voc:details [
+voc:url "https://ld.solidbase.info/";
+voc:icon "https://solid.inrupt.com/themes/custom/solid/logo.svg";
+voc:policyURL "https://solid.pldn.nl";
+voc:description "ld.solidbase.info was a public Solid server hosted by ecobytes.net, Germany."
 ] .
