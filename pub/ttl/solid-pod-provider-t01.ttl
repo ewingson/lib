@@ -97,6 +97,16 @@ voc:description "trinpod.us is a public Solid server provided by Graphmetrix, U.
 
 <https://www.serverproject.de/ev/ten.html>
 voc:id "10"^^xsd:string;
+dc:title "janschill.de";
+voc:details [
+voc:url "https://janschill.de/";
+voc:icon "https://solid.inrupt.com/themes/custom/solid/logo.svg";
+voc:policyURL "https://janschill.de";
+voc:description "janschill.de is a public Solid server deployed on a de-Domain."
+] .
+
+<https://www.serverproject.de/ev/eleven.html>
+voc:id "11"^^xsd:string;
 dc:title "solid.authing";
 voc:details [
 voc:url "https://solid.authing.cn/";
@@ -105,8 +115,8 @@ voc:policyURL "https://solid.authing.cn";
 voc:description "solid.authing was a public Solid server deployed in China."
 ] .
 
-<https://www.serverproject.de/ev/eleven.html>
-voc:id "11"^^xsd:string;
+<https://www.serverproject.de/ev/twelve.html>
+voc:id "12"^^xsd:string;
 dc:title "podware.org";
 voc:details [
 voc:url "https://podware.org/";
@@ -115,8 +125,8 @@ voc:policyURL "https://podware.org";
 voc:description "podware.org was a public Solid server deployed in Italy."
 ] .
 
-<https://www.serverproject.de/ev/twelve.html>
-voc:id "12"^^xsd:string;
+<https://www.serverproject.de/ev/thirteen.html>
+voc:id "13"^^xsd:string;
 dc:title "solid.community";
 voc:details [
 voc:url "https://solid.community/";
@@ -125,8 +135,8 @@ voc:policyURL "https://solid.community";
 voc:description "solid.community was a public server for early adopters of Solid."
 ] .
 
-<https://www.serverproject.de/ev/thirteen.html>
-voc:id "13"^^xsd:string;
+<https://www.serverproject.de/ev/fourteen.html>
+voc:id "14"^^xsd:string;
 dc:title "ld.solidbase.info";
 voc:details [
 voc:url "https://ld.solidbase.info/";
