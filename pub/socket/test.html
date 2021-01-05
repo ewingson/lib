@@ -2,6 +2,9 @@
 <!-- websocket test location https://www.serverproject.de/etc/solid/socket/test.html -->
 <html>
 <head><meta charset="utf-8"/></head>
+<body>
+<h5><a href = "https://github.com/solid">solid</a> websockets</h5>
+<p>all output goes to the console</p>
 <script>
   // definition
   var socket = new WebSocket('wss://testpro.solidweb.org/', ['solid.0.1.0']);
@@ -40,8 +43,8 @@
 
   // listen for changes, display messages, provided by @scenaristeur  
   function display(msg){
-    let url = msg.data.substring(4, msg.data.length)
-    console.log(url)
+    let url = msg.data.substring(4, msg.data.length);
+    console.log(url);
     fetch(url)
    .then( r => r.text() )
    .then( t => console.log(t) )
@@ -59,6 +62,15 @@
 //var text="";  
 //display(text);
 
+// this is feldforschung
+// diese app oeffnet ein websocket und beobachtet es.
+// als startpunkt dient o.g. URL.
+// code von @scenaristeur diente als sprungbrett.
+// codebase github websocket evaluation experiments
+
+console.log ("start of code");
+var i = 0;
+console.log ("i = ", i);
 </script>
- 
+</body>
 </html>
