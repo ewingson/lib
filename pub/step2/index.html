@@ -1,0 +1,112 @@
+<!doctype html>
+<!-- websocket test location https://www.serverproject.de/etc/solid/auth/index.html -->
+<html>
+<head><meta charset="utf-8"/></head>
+<body>
+<h5><a href = "https://github.com/solid">solid</a> write experiment</h5>
+<p>all output goes to the console</p>
+<script src="https://solid.github.io/solid-auth-client/dist/solid-auth-client.bundle.js"></script>
+<script>
+  // definition
+  var socket = new WebSocket('wss://testpro.solidweb.org/', ['solid.0.1.0']);
+  console.log("solidweb socket definition done", socket);
+ 
+  // open
+  socket.onopen = function() {
+    this.send('sub https://testpro.solidweb.org/public/ctest/writing.txt');
+    console.log("solidweb socket sub sent", socket);
+  };
+ 
+  // on msg
+  socket.onmessage = function(msg) {
+    if (msg.data && msg.data.slice(0, 3) === 'pub') {
+      console.log("solidweb message:",msg);
+      display(msg);
+      // resource updated, refetch resource
+    }
+  };
+  
+  // on close
+  socket.onclose = function(event) {
+  if (event.wasClean) {
+    console.log("solidweb closed clean, code:", event.code, ", reason:", event.reason);
+  } else {
+    // e.g. server process killed or network down
+    // event.code is usually 1006 in this case
+    console.log("solidweb dirty close, code:", event.code);
+  }
+};
+ 
+  // on error 
+  socket.onerror = function(error) {
+  console.log("solidweb error:", error.message);
+};
+
+  // listen for changes, display messages, provided by @scenaristeur  
+  function display(msg){
+    let url = msg.data.substring(4, msg.data.length);
+    console.log(url);
+    fetch(url)
+   .then( r => r.text() )
+   .then( t => console.log(t) )
+      
+   fetch(url, {
+     headers: {"Content-type": "text/plain; charset=UTF-8"},
+     method: 'GET'
+   })
+   .then(response => console.log(response.text()))
+   .catch((error) => {
+     console.error('GET fetch url error:', error);
+   });
+  } 
+
+  // main function
+  function main(initv){
+  var base="https://testpro.solidweb.org/public/ctest/";
+  var dateiname="writing.txt";
+  var inhalt="this is the first line\nthis is the second line\nthis is the third line\nthis is the forth line";
+  console.log("solidweb parameter:", initv);
+  console.log("counting a while");
+  for (var l=0; l<10000; l++){ //nothing
+  }
+  console.log("finished counting");
+    
+  solid.auth.trackSession(session => {
+  if (!session)
+    console.log('The user is not logged in')
+  else
+    console.log(`The user is ${session.webId}`)
+})
+  var url = base + dateiname;
+  fetch(url, {
+  method: 'PUT',
+  headers: {
+    'Content-Type': 'text/plain',
+  },
+  body: inhalt
+})
+console.log("written");
+fetch(url)
+  .then(response => response.text())
+  .then(text => console.log(text))
+  //socket.close();
+  }
+
+//var text="";  
+//display(text);
+
+// this is feldforschung
+// diese app oeffnet ein websocket und beobachtet es.
+// als startpunkt dient o.g. URL.
+// code von @scenaristeur diente als sprungbrett.
+// codebase github websocket evaluation experiments
+
+console.log ("start of code");
+var i = 0;
+console.log ("i =", i);
+
+main(1);
+
+</script>
+</body>
+</html>
