@@ -107,6 +107,26 @@ voc:description "janschill.de is a public Solid server deployed on a de-Domain."
 
 <https://www.serverproject.de/ev/eleven.html>
 voc:id "11"^^xsd:string;
+dc:title "solid.mypod.dev";
+voc:details [
+voc:url "https://solid.mypod.dev/";
+voc:icon "https://solid.inrupt.com/themes/custom/solid/logo.svg";
+voc:policyURL "https://solid.mypod.dev";
+voc:description "solid.mypod.dev is a public Solid Server deployed in America/Canada/Mexico."
+] .
+
+<https://www.serverproject.de/ev/twelve.html>
+voc:id "12"^^xsd:string;
+dc:title "mypod.happyhobbit.dev";
+voc:details [
+voc:url "https://mypod.happyhobbit.dev/";
+voc:icon "https://solid.inrupt.com/themes/custom/solid/logo.svg";
+voc:policyURL "https://mypod.happyhobbit.dev";
+voc:description "mypod.happyhobbit.dev is a public Solid Server based in the American region."
+] .
+
+<https://www.serverproject.de/ev/thirteen.html>
+voc:id "13"^^xsd:string;
 dc:title "solid.authing";
 voc:details [
 voc:url "https://solid.authing.cn/";
@@ -115,8 +135,8 @@ voc:policyURL "https://solid.authing.cn";
 voc:description "solid.authing was a public Solid server deployed in China."
 ] .
 
-<https://www.serverproject.de/ev/twelve.html>
-voc:id "12"^^xsd:string;
+<https://www.serverproject.de/ev/fourteen.html>
+voc:id "14"^^xsd:string;
 dc:title "podware.org";
 voc:details [
 voc:url "https://podware.org/";
@@ -125,8 +145,8 @@ voc:policyURL "https://podware.org";
 voc:description "podware.org was a public Solid server deployed in Italy."
 ] .
 
-<https://www.serverproject.de/ev/thirteen.html>
-voc:id "13"^^xsd:string;
+<https://www.serverproject.de/ev/fifteen.html>
+voc:id "15"^^xsd:string;
 dc:title "solid.community";
 voc:details [
 voc:url "https://solid.community/";
@@ -135,8 +155,8 @@ voc:policyURL "https://solid.community";
 voc:description "solid.community was a public server for early adopters of Solid."
 ] .
 
-<https://www.serverproject.de/ev/fourteen.html>
-voc:id "14"^^xsd:string;
+<https://www.serverproject.de/ev/sixteen.html>
+voc:id "16"^^xsd:string;
 dc:title "ld.solidbase.info";
 voc:details [
 voc:url "https://ld.solidbase.info/";
