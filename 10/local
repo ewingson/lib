@@ -1,4 +1,4 @@
-//login with solid-auth-client
+//login with solid-auth-client (as is)
 //problem with dependency-setup
 //solution might be webpack
 
