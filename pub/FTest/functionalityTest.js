@@ -20,7 +20,7 @@
  *
  */
 // functions / classes ?  
-import escape from 'escape-html'
+//import escape from 'escape-html'
 import uuid from 'uuid'
 import * as rdf from 'rdflib'
 import * as debug from '../debug'
@@ -29,13 +29,13 @@ import * as debug from '../debug'
 // const webClient = require('solid-web-client')(rdf)
 
 // ./ == widgets ? ../ == your local ?
-import { makeDropTarget } from './dragAndDrop'
+//import { makeDropTarget } from './dragAndDrop'
 import { errorMessageBlock } from './error'
-import { iconBase } from '../iconBase'
+//import { iconBase } from '../iconBase'
 import ns from '../ns'
 import { solidLogicSingleton } from '../logic'
 
-const kb = solidLogicSingleton.store
+const lmn = solidLogicSingleton.store
 
 export class functionalityTest {
   //five hardcoded persons
@@ -69,6 +69,9 @@ export class functionalityTest {
 
 export class getTimezoneByWebid {
 
+  debug.log ('this is a debug message from the tz-class')
+  console.log ('we have defined the quad lmn in the head')
+
 // here goes the logic of finding the Webids of the hardcoded persons.
 // TODO:
 // a possible goal could be to display the timezone of the POD-Provider.
@@ -86,4 +89,5 @@ export class getTimezoneByWebid {
 // - will work in the dev-test Branch of ewingson/solid-ui (at least for the moment)
 // - TODO: how to create a pane ---- look for solid-logic ---- import and define const lmn store from logic.ts ---- store the data in public type index on testpro ---- make up good questions
 }
+
 
