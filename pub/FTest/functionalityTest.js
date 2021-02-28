@@ -81,4 +81,9 @@ export class getTimezoneByWebid {
 //
 // Comments
 // - if we have a quad, the forth parameter is the document itself
+//
+// Conclusion
+// - will work in the dev-test Branch of ewingson/solid-ui (at least for the moment)
+// - TODO: how to create a pane ---- look for solid-logic ---- import and define const lmn store from logic.ts ---- store the data in public type index on testpro ---- make up good questions
 }
+
