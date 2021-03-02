@@ -70,7 +70,7 @@ export class functionalityTest {
 export class getTimezoneByWebid {
 
   debug.log ('this is a debug message from the tz-class')
-  console.log ('we have defined the quad lmn in the head')
+  console.log ('we have defined the store lmn in the head')
 
 // here goes the logic of finding the Webids of the hardcoded persons.
 // TODO:
