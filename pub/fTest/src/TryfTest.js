@@ -1,4 +1,4 @@
-//location ./solid-client-authn-js/packages/browser/examples/fTest/src/fTest.js
+//location ./solid-client-authn-js/packages/browser/examples/fTest/src/TryfTest.js
 /*
  * Copyright 2021 Inrupt Inc.
  *
