@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>getting started: profile editor v1.0.0</title>
+    <script defer src="./index.js" ></script>
+    <link rel="stylesheet" href="my-demo.css" />
+  </head>
+  <body>
+    
+    <header>
+        <h2>demo-app p-edit</h2>
+        <h3>(Inrupt JavaScript Client Libraries)</h3>
+    </header>
+    <section id="login" class="panel">
+        <div class="row">
+          <label id="labelLogin" for="btnLogin">1. Click the button to log in: </label>
+          <button name="btnLogin" id="btnLogin">Login</button> 
+          <p id="labelStatus"></p>
+        </div>
+    </section>
+
+    <div id="read" class="panel" >
+      <div class="row">
+        <label id="readlabel" for="webID">2. Enter a WebID: </label>
+        <input type="url" id="webID" name="webID"  size="50" pattern="https://.*" value="https://docs-example.inrupt.net/profile/card#me">
+        <button name="btnRead" id="btnRead" >Read Profile</button>
+      </div>
+      <dl class="display"> 
+          <dt>Formatted Name (FN): </dt>
+          <dd id="labelFN"></dd>
+          <dt>Role: </dt>
+          <dd id="labelRole"></dd>
+      </dl>
+    </div>
+  </body>
+</html>
