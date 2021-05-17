@@ -27,6 +27,16 @@ voc:description "solidcommunity.net is a public Solid server."
 
 <https://www.serverproject.de/ev/three.html>
 voc:id "3"^^xsd:string;
+dc:title "pod.inrupt.com";
+voc:details [
+voc:url "https://signup.pod.inrupt.com/";
+voc:icon "https://signup.pod.inrupt.com/inrupt-ps-logo.png";
+voc:policyURL "https://inrupt.com/terms-conditions/";
+voc:description "Inrupt Pod Spaces is an instance of the Enterprise Solid Server provided by Inrupt, Inc., hosted by Amazon and in Alpha stadium."
+] .
+
+<https://www.serverproject.de/ev/four.html>
+voc:id "4"^^xsd:string;
 dc:title "dev.inrupt.net";
 voc:details [
 voc:url "https://dev.inrupt.net/";
@@ -35,8 +45,8 @@ voc:policyURL "https://inrupt.net";
 voc:description "dev.inrupt.net is a public Solid development server of Inrupt, Inc."
 ] .
 
-<https://www.serverproject.de/ev/four.html>
-voc:id "4"^^xsd:string;
+<https://www.serverproject.de/ev/five.html>
+voc:id "5"^^xsd:string;
 dc:title "solidweb.org";
 voc:details [
 voc:url "https://solidweb.org/";
@@ -45,8 +55,8 @@ voc:policyURL "https://www.serverproject.de/files/solidweb_org_terms.txt";
 voc:description "solidweb.org is a public Solid server based in Germany which is in an experimental state."
 ] .
 
-<https://www.serverproject.de/ev/five.html>
-voc:id "5"^^xsd:string;
+<https://www.serverproject.de/ev/six.html>
+voc:id "6"^^xsd:string;
 dc:title "solid.open.ac.uk";
 voc:details [
 voc:url "https://solid.open.ac.uk/";
@@ -55,8 +65,8 @@ voc:policyURL "http://www.open.ac.uk";
 voc:description "solid.open.ac.uk is a public Solid server based at the UK's Open University."
 ] .
 
-<https://www.serverproject.de/ev/six.html>
-voc:id "6"^^xsd:string;
+<https://www.serverproject.de/ev/seven.html>
+voc:id "7"^^xsd:string;
 dc:title "solid.pldn.nl";
 voc:details [
 voc:url "https://solid.pldn.nl/";
@@ -65,8 +75,8 @@ voc:policyURL "https://solid.pldn.nl";
 voc:description "solid.pldn.nl is an experimental public Solid server based in the Netherlands."
 ] .
 
-<https://www.serverproject.de/ev/seven.html>
-voc:id "7"^^xsd:string;
+<https://www.serverproject.de/ev/eight.html>
+voc:id "8"^^xsd:string;
 dc:title "solid.openlinksw.com:8444/";
 voc:details [
 voc:url "https://solid.openlinksw.com:8444/";
@@ -75,8 +85,8 @@ voc:policyURL "https://solid.openlinksw.com:8444/";
 voc:description "solid.openlinksw.com:8444 is a public Solid server running 4.x deployed by OpenLink Software Inc., U.S."
 ] .
 
-<https://www.serverproject.de/ev/eight.html>
-voc:id "8"^^xsd:string;
+<https://www.serverproject.de/ev/nine.html>
+voc:id "9"^^xsd:string;
 dc:title "solid.openlinksw.com:8445";
 voc:details [
 voc:url "https://solid.openlinksw.com:8445/";
@@ -85,8 +95,8 @@ voc:policyURL "https://solid.openlinksw.com:8445/";
 voc:description "solid.openlinksw.com:8444 is a public Solid server running 5.x deployed by OpenLink Software Inc., U.S."
 ] .
 
-<https://www.serverproject.de/ev/nine.html>
-voc:id "9"^^xsd:string;
+<https://www.serverproject.de/ev/ten.html>
+voc:id "10"^^xsd:string;
 dc:title "trinpod.us";
 voc:details [
 voc:url "https://trinpod.us/";
@@ -95,8 +105,8 @@ voc:policyURL "https://graphmetrix.com/terms";
 voc:description "trinpod.us is a public Solid server provided by Graphmetrix, U.S.A.."
 ] .
 
-<https://www.serverproject.de/ev/ten.html>
-voc:id "10"^^xsd:string;
+<https://www.serverproject.de/ev/eleven.html>
+voc:id "11"^^xsd:string;
 dc:title "janschill.de";
 voc:details [
 voc:url "https://janschill.de/";
@@ -105,8 +115,8 @@ voc:policyURL "https://janschill.de";
 voc:description "janschill.de is a public Solid server deployed on a de-Domain."
 ] .
 
-<https://www.serverproject.de/ev/eleven.html>
-voc:id "11"^^xsd:string;
+<https://www.serverproject.de/ev/twelve.html>
+voc:id "12"^^xsd:string;
 dc:title "solid.mypod.dev";
 voc:details [
 voc:url "https://solid.mypod.dev/";
@@ -115,8 +125,8 @@ voc:policyURL "https://solid.mypod.dev";
 voc:description "solid.mypod.dev is a public Solid Server deployed in America/Canada/Mexico."
 ] .
 
-<https://www.serverproject.de/ev/twelve.html>
-voc:id "12"^^xsd:string;
+<https://www.serverproject.de/ev/thirteen.html>
+voc:id "13"^^xsd:string;
 dc:title "mypod.happyhobbit.dev";
 voc:details [
 voc:url "https://mypod.happyhobbit.dev/";
@@ -125,8 +135,8 @@ voc:policyURL "https://mypod.happyhobbit.dev";
 voc:description "mypod.happyhobbit.dev is a public Solid Server based in the American region."
 ] .
 
-<https://www.serverproject.de/ev/thirteen.html>
-voc:id "13"^^xsd:string;
+<https://www.serverproject.de/ev/fourteen.html>
+voc:id "14"^^xsd:string;
 dc:title "solid.authing";
 voc:details [
 voc:url "https://solid.authing.cn/";
@@ -135,8 +145,8 @@ voc:policyURL "https://solid.authing.cn";
 voc:description "solid.authing was a public Solid server deployed in China."
 ] .
 
-<https://www.serverproject.de/ev/fourteen.html>
-voc:id "14"^^xsd:string;
+<https://www.serverproject.de/ev/fifteen.html>
+voc:id "15"^^xsd:string;
 dc:title "podware.org";
 voc:details [
 voc:url "https://podware.org/";
@@ -145,8 +155,8 @@ voc:policyURL "https://podware.org";
 voc:description "podware.org was a public Solid server deployed in Italy."
 ] .
 
-<https://www.serverproject.de/ev/fifteen.html>
-voc:id "15"^^xsd:string;
+<https://www.serverproject.de/ev/sixteen.html>
+voc:id "16"^^xsd:string;
 dc:title "solid.community";
 voc:details [
 voc:url "https://solid.community/";
@@ -155,8 +165,8 @@ voc:policyURL "https://solid.community";
 voc:description "solid.community was a public server for early adopters of Solid."
 ] .
 
-<https://www.serverproject.de/ev/sixteen.html>
-voc:id "16"^^xsd:string;
+<https://www.serverproject.de/ev/seventeen.html>
+voc:id "17"^^xsd:string;
 dc:title "ld.solidbase.info";
 voc:details [
 voc:url "https://ld.solidbase.info/";
