@@ -29,5 +29,5 @@ console.log(org);
 //further things
 //...
 //build a quadrupel
-//let quads = store.match(subject, predicate, object, document);
+//let quad = store.match(subject, predicate, object, document);
 }
