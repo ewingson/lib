@@ -1,8 +1,16 @@
+//init:FTest
 //init:cat
 //init:common01
+//init:fTest
 //init:login2
+//init:p-edit
+//init:print_name
+//init:public_folder
+//init:public_folder_v2
+//init:s-edit
 //init:socket
 //init:step2
+//init:string_comparison
 //init:test
 //init:ttl
-
+//init:w-edit
