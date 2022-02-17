@@ -122,7 +122,7 @@ voc:details [
 voc:url "https://solid.mypod.dev/";
 voc:icon "https://solid.inrupt.com/themes/custom/solid/logo.svg";
 voc:policyURL "https://solid.mypod.dev";
-voc:description "solid.mypod.dev is a public Solid Server deployed in America/Canada/Mexico."
+voc:description "solid.mypod.dev was a public Solid Server deployed in America/Canada/Mexico."
 ] .
 
 <https://www.serverproject.de/ev/thirteen.html>
@@ -132,7 +132,7 @@ voc:details [
 voc:url "https://mypod.happyhobbit.dev/";
 voc:icon "https://solid.inrupt.com/themes/custom/solid/logo.svg";
 voc:policyURL "https://mypod.happyhobbit.dev";
-voc:description "mypod.happyhobbit.dev is a public Solid Server based in the American region."
+voc:description "mypod.happyhobbit.dev was a public Solid Server based in the American region."
 ] .
 
 <https://www.serverproject.de/ev/fourteen.html>
