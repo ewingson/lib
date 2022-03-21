@@ -61,7 +61,7 @@ function openFile(callBack)
     document.body.appendChild(element);
 
     element.click();
-}//end function openFile (L2)
+}//end function openFile (L50)
 
 function readText(filePath,callBack)
 {
@@ -90,7 +90,7 @@ function readText(filePath,callBack)
         return false;
     }//end else      
     return true;
-}//end function readText (L17)
+}//end function readText (L67)
 
 function execCode()
 {
@@ -173,6 +173,6 @@ function execCode()
                 maininit(m, zeile1[m], link1[m], title1[m]);
                 //await Sleep(200);
 	    }       
-       	});//end function openFile (L43)
-    }//end function onclick (L42)	
-}//end function execCode (L39)
+       	});//end function openFile (L103)
+    }//end function onclick (L100)	
+}//end function execCode (L96)
