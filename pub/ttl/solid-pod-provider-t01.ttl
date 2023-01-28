@@ -142,7 +142,7 @@ voc:details [
 voc:url "https://solid.aifb.kit.edu/";
 voc:icon "https://solid.aifb.kit.edu/.well-known/css/images/solid.svg";
 voc:policyURL "https://solid.aifb.kit.edu";
-voc:description "solid.aifb.kit.edu is a Community Solid Server provided by the Karlsruhe Institue of Technology in Germany."
+voc:description "solid.aifb.kit.edu is a Community Solid Server provided by the Karlsruhe Institute of Technology in Germany."
 ] .
 
 <https://www.serverproject.de/ev/fifteen.html>
