@@ -1,0 +1,21 @@
+name: pushToPod
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  pushToPod:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - uses: o-development/clone-to-solid-pod@master
+        with:
+          input_path: /home/evemat/Dokumente/development/solid/dev/lib/
+          target_container: https://solidweb.me/testpro/stuff/cloned/
+          refresh_token: ${{ secrets.INPUT_REFRESH_TOKEN }}
+          client_id: ${{ secrets.INPUT_CLIENT_ID }}
+          client_secret: ${{ secrets.INPUT_CLIENT_SECRET }}
+          oidc_issuer: ${{ secrets.INPUT_OIDC_ISSUER }}
