@@ -1,0 +1,18 @@
+ => ERROR [build 4/4] RUN npm ci --unsafe-perm && npm run build                                                                                                                                           45.2s
+------                                                                                                                                                                                                          
+ > [build 4/4] RUN npm ci --unsafe-perm && npm run build:                                                                                                                                                       
+#0 5.322 npm WARN EBADENGINE Unsupported engine {                                                                                                                                                               
+#0 5.323 npm WARN EBADENGINE   package: '@inrupt/solid-client-authn-core@1.14.0',                                                                                                                               
+#0 5.324 npm WARN EBADENGINE   required: { node: '^14.0.0 || ^16.0.0' },                                                                                                                                        
+#0 5.324 npm WARN EBADENGINE   current: { node: 'v18.16.0', npm: '9.5.1' }                                                                                                                                      
+#0 5.325 npm WARN EBADENGINE }
+#0 5.327 npm WARN EBADENGINE Unsupported engine {
+#0 5.327 npm WARN EBADENGINE   package: '@inrupt/solid-client-authn-node@1.14.0',
+#0 5.327 npm WARN EBADENGINE   required: { node: '^14.0.0 || ^16.0.0' },
+#0 5.327 npm WARN EBADENGINE   current: { node: 'v18.16.0', npm: '9.5.1' }
+#0 5.328 npm WARN EBADENGINE }
+#0 5.401 npm WARN EBADENGINE Unsupported engine {
+#0 5.402 npm WARN EBADENGINE   package: 'oidc-provider@7.10.6',
+#0 5.402 npm WARN EBADENGINE   required: { node: '^12.19.0 || ^14.15.0 || ^16.13.0' },
+#0 5.402 npm WARN EBADENGINE   current: { node: 'v18.16.0', npm: '9.5.1' }
+#0 5.402 npm WARN EBADENGINE }
