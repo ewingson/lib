@@ -1,0 +1,54 @@
+$ docker build -t ewingson/rpio-solidos:6 .
+[+] Building 14.0s (9/17)                                                                                                                                                                                       
+ => [internal] load .dockerignore                                                                                                                                                                          1.2s
+ => => transferring context: 53B                                                                                                                                                                           0.0s
+ => [internal] load build definition from Dockerfile                                                                                                                                                       0.9s
+ => => transferring dockerfile: 1.40kB                                                                                                                                                                     0.0s
+ => [internal] load metadata for docker.io/library/node:lts-alpine                                                                                                                                         1.5s
+ => [auth] library/node:pull token for registry-1.docker.io                                                                                                                                                0.0s
+ => [internal] load build context                                                                                                                                                                          1.4s
+ => => transferring context: 5.14MB                                                                                                                                                                        0.6s
+ => [stage-1 1/9] FROM docker.io/library/node:lts-alpine@sha256:1ccc70acda680aa4ba47f53e7c40b2d4d6892de74817128e0662d32647dd7f4d                                                                           0.2s
+ => => resolve docker.io/library/node:lts-alpine@sha256:1ccc70acda680aa4ba47f53e7c40b2d4d6892de74817128e0662d32647dd7f4d                                                                                   0.2s
+ => CACHED [build 2/4] WORKDIR /community-server                                                                                                                                                           0.0s
+ => [build 3/4] COPY . .                                                                                                                                                                                   2.2s
+ => ERROR [build 4/4] RUN npm ci --unsafe-perm && npm run build                                                                                                                                            7.1s
+------                                                                                                                                                                                                          
+ > [build 4/4] RUN npm ci --unsafe-perm && npm run build:                                                                                                                                                       
+#0 6.416 npm ERR! code EUSAGE                                                                                                                                                                                   
+#0 6.427 npm ERR!                                                                                                                                                                                               
+#0 6.427 npm ERR! The `npm ci` command can only install with an existing package-lock.json or                                                                                                                   
+#0 6.428 npm ERR! npm-shrinkwrap.json with lockfileVersion >= 1. Run an install with npm@5 or                                                                                                                   
+#0 6.428 npm ERR! later to generate a package-lock.json file, then try again.
+#0 6.428 npm ERR! 
+#0 6.428 npm ERR! Clean install a project
+#0 6.428 npm ERR! 
+#0 6.428 npm ERR! Usage:
+#0 6.428 npm ERR! npm ci
+#0 6.428 npm ERR! 
+#0 6.429 npm ERR! Options:
+#0 6.429 npm ERR! [-S|--save|--no-save|--save-prod|--save-dev|--save-optional|--save-peer|--save-bundle]
+#0 6.429 npm ERR! [-E|--save-exact] [-g|--global]
+#0 6.429 npm ERR! [--install-strategy <hoisted|nested|shallow|linked>] [--legacy-bundling]
+#0 6.429 npm ERR! [--global-style] [--omit <dev|optional|peer> [--omit <dev|optional|peer> ...]]
+#0 6.429 npm ERR! [--strict-peer-deps] [--no-package-lock] [--foreground-scripts]
+#0 6.429 npm ERR! [--ignore-scripts] [--no-audit] [--no-bin-links] [--no-fund] [--dry-run]
+#0 6.429 npm ERR! [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
+#0 6.429 npm ERR! [-ws|--workspaces] [--include-workspace-root] [--install-links]
+#0 6.429 npm ERR! 
+#0 6.429 npm ERR! aliases: clean-install, ic, install-clean, isntall-clean
+#0 6.429 npm ERR! 
+#0 6.429 npm ERR! Run "npm help ci" for more info
+#0 6.435 
+#0 6.435 npm ERR! A complete log of this run can be found in:
+#0 6.435 npm ERR!     /root/.npm/_logs/2023-05-08T01_00_52_552Z-debug-0.log
+------
+Dockerfile:11
+--------------------
+   9 |     
+  10 |     # Install and build the Solid community server (prepare script cannot run in wd)
+  11 | >>> RUN npm ci --unsafe-perm && npm run build
+  12 |     
+  13 |     
+--------------------
+ERROR: failed to solve: process "/bin/sh -c npm ci --unsafe-perm && npm run build" did not complete successfully: exit code: 1
