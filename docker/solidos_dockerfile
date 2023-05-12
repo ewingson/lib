@@ -1,0 +1,27 @@
+FROM node:16
+
+# Container config & data dir for volume sharing
+# Defaults to filestorage with /data directory (passed through CMD below)
+RUN mkdir /config /data
+
+# Create app directory
+WORKDIR /usr/src/app
+
+# Install app dependencies
+# A wildcard is used to ensure both package.json AND package-lock.json are copied
+# where available
+COPY package*.json ./
+RUN npm ci --omit=dev
+
+# Bundle app source
+COPY . .
+
+# Informs Docker that the container listens on the specified network port at runtime
+EXPOSE 3000
+
+# By default run in filemode with mashlib (overriden if passing alternative arguments or env vars)
+ENV CSS_CONFIG=config-mashlib.json
+ENV CSS_ROOT_FILE_PATH=/data
+
+# Set command run by the container
+ENTRYPOINT [ "node", "node_modules/@solid/community-server/bin/server.js" ]
