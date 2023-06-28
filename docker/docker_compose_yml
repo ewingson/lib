@@ -1,0 +1,20 @@
+version: "3"
+services:
+  ewingson-css:
+    image: ewingson/rpio-solidos:12
+    ports:
+      - "0.0.0.0:3000:3000"
+    command: "-c config-mashlib.json -f /data -b https://solid-hosting-dev.s.redhost.be/"
+    expose:
+      - 3000 # magic nginx, make nginx proxy know on what port our service is running internally
+    networks: # magic nginx, we need to be in nginx's docker network so it can forward requests to >
+      - proxy # magic nginx, this is the network named below
+      - default # magic nginx, because we supply the new network we also need default (only needed >
+    environment:
+      VIRTUAL_HOST: "solid-hosting-dev.s.redhost.be" # magic nginx, where should this site be runni>
+      LETSENCRYPT_HOST: "solid-hosting-dev.s.redhost.be" # magic nginx, where should this site be r>
+      LETSENCRYPT_EMAIL: "support@redpencil.io" # magic nginx, where should reports on failed letse>
+networks: # magic nginx, we must supply some special networks to reference
+  proxy: # magic nginx, we name the letsencrypt proxy network "proxy" in this file
+    external: # magic nginx, the network we will name proxy is actually an external network (meanin>
+      name: letsencrypt_default # magic nginx, the docker network is named letsencrypt_default
