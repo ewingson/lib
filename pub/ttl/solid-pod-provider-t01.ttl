@@ -192,7 +192,7 @@ voc:details [
 voc:url "https://mijnsolidpod.nl/idp/register/";
 voc:icon "https://solid.inrupt.com/themes/custom/solid/logo.svg";
 voc:policyURL "https://mijnsolidpod.nl";
-voc:description "mijnsolidpod.nl is a Community Solid Server based in the Netherlands."
+voc:description "mijnsolidpod.nl was a Community Solid Server based in the Netherlands."
 ] .
 
 <https://www.serverproject.de/ev/twenty.html>
@@ -202,7 +202,7 @@ voc:details [
 voc:url "https://mypod.dev/";
 voc:icon "https://solid.inrupt.com/themes/custom/solid/logo.svg";
 voc:policyURL "https://mypod.dev";
-voc:description "mypod.dev is a Canadian public Solid Server using the Penny frontend."
+voc:description "mypod.dev was a Canadian public Solid Server using the Penny frontend."
 ] .
 
 <https://www.serverproject.de/ev/twentyone.html>
