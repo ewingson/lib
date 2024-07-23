@@ -187,6 +187,16 @@ voc:description "this is a public Community Solid Server instance hosted in Fran
 
 <https://www.serverproject.de/ev/nineteen.html>
 voc:id "19"^^xsd:string;
+dc:title "solidcommunity.au";
+voc:details [
+voc:url "https://solidcommunity.au/";
+voc:icon "https://solid.inrupt.com/themes/custom/solid/logo.svg";
+voc:policyURL "https://solidcommunity.au";
+voc:description "solidcommunity.au is an Australian Community Solid Server instance."
+] .
+
+<https://www.serverproject.de/ev/twenty.html>
+voc:id "20"^^xsd:string;
 dc:title "mijnsolidpod.nl";
 voc:details [
 voc:url "https://mijnsolidpod.nl/idp/register/";
@@ -195,8 +205,8 @@ voc:policyURL "https://mijnsolidpod.nl";
 voc:description "mijnsolidpod.nl was a Community Solid Server based in the Netherlands."
 ] .
 
-<https://www.serverproject.de/ev/twenty.html>
-voc:id "20"^^xsd:string;
+<https://www.serverproject.de/ev/twentyone.html>
+voc:id "21"^^xsd:string;
 dc:title "mypod.dev";
 voc:details [
 voc:url "https://mypod.dev/";
@@ -205,8 +215,8 @@ voc:policyURL "https://mypod.dev";
 voc:description "mypod.dev was a Canadian public Solid Server using the Penny frontend."
 ] .
 
-<https://www.serverproject.de/ev/twentyone.html>
-voc:id "21"^^xsd:string;
+<https://www.serverproject.de/ev/twentytwo.html>
+voc:id "22"^^xsd:string;
 dc:title "solid.mypod.dev";
 voc:details [
 voc:url "https://solid.mypod.dev/";
@@ -215,8 +225,8 @@ voc:policyURL "https://solid.mypod.dev";
 voc:description "solid.mypod.dev was a public Solid Server deployed in America/Canada/Mexico."
 ] .
 
-<https://www.serverproject.de/ev/twentytwo.html>
-voc:id "22"^^xsd:string;
+<https://www.serverproject.de/ev/twentythree.html>
+voc:id "23"^^xsd:string;
 dc:title "mypod.happyhobbit.dev";
 voc:details [
 voc:url "https://mypod.happyhobbit.dev/";
@@ -225,8 +235,8 @@ voc:policyURL "https://mypod.happyhobbit.dev";
 voc:description "mypod.happyhobbit.dev was a public Solid Server based in the American region."
 ] .
 
-<https://www.serverproject.de/ev/twentythree.html>
-voc:id "23"^^xsd:string;
+<https://www.serverproject.de/ev/twentyfour.html>
+voc:id "24"^^xsd:string;
 dc:title "solid.authing";
 voc:details [
 voc:url "https://solid.authing.cn/";
@@ -235,8 +245,8 @@ voc:policyURL "https://solid.authing.cn";
 voc:description "solid.authing was a public Solid server deployed in China."
 ] .
 
-<https://www.serverproject.de/ev/twentyfour.html>
-voc:id "24"^^xsd:string;
+<https://www.serverproject.de/ev/twentyfive.html>
+voc:id "25"^^xsd:string;
 dc:title "podware.org";
 voc:details [
 voc:url "https://podware.org/";
@@ -245,8 +255,8 @@ voc:policyURL "https://podware.org";
 voc:description "podware.org was a public Solid server deployed in Italy."
 ] .
 
-<https://www.serverproject.de/ev/twentyfive.html>
-voc:id "25"^^xsd:string;
+<https://www.serverproject.de/ev/twentysix.html>
+voc:id "26"^^xsd:string;
 dc:title "solid.community";
 voc:details [
 voc:url "https://solid.community/";
@@ -255,8 +265,8 @@ voc:policyURL "https://solid.community";
 voc:description "solid.community was a public server for early adopters of Solid."
 ] .
 
-<https://www.serverproject.de/ev/twentysix.html>
-voc:id "26"^^xsd:string;
+<https://www.serverproject.de/ev/twentyseven.html>
+voc:id "27"^^xsd:string;
 dc:title "ld.solidbase.info";
 voc:details [
 voc:url "https://ld.solidbase.info/";
@@ -265,8 +275,8 @@ voc:policyURL "https://solid.pldn.nl";
 voc:description "ld.solidbase.info was a public Solid server hosted by ecobytes.net, Germany."
 ] .
 
-<https://www.serverproject.de/ev/twentyseven.html>
-voc:id "27"^^xsd:string;
+<https://www.serverproject.de/ev/twentyeight.html>
+voc:id "28"^^xsd:string;
 dc:title "janschill.de";
 voc:details [
 voc:url "https://janschill.de/";
@@ -275,8 +285,8 @@ voc:policyURL "https://janschill.de";
 voc:description "janschill.de was a public Solid server deployed on a de-Domain."
 ] .
 
-<https://www.serverproject.de/ev/twentyeight.html>
-voc:id "28"^^xsd:string;
+<https://www.serverproject.de/ev/twentynine.html>
+voc:id "29"^^xsd:string;
 dc:title "solid.pldn.nl";
 voc:details [
 voc:url "https://solid.pldn.nl/";
