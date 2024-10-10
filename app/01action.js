@@ -37,6 +37,6 @@ server.listen(port, function () {
 
 // Attach WS to solid
 solidWs(server, app)
-console.log('here code')
-console.log('everything listening now')
+console.log('this is in any case executed once we have the require work')
+
 
