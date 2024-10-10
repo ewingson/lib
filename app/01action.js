@@ -36,7 +36,7 @@ server.listen(port, function () {
 })
 
 // Attach WS to solid
-solidWs(server, app)
+solidws(server, app)
 console.log('this is in any case executed once we have the require work')
 
 
