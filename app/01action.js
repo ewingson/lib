@@ -19,7 +19,7 @@ document.body.addEventListener("keydown",function(e){
 
 };
 
-var solidWs = require('solid-ws')
+var solidws = require('solid-ws')
 var ldnode = require('ldnode')
 var express = require('express')
 var https = require('https')
