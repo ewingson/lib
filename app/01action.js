@@ -1,3 +1,5 @@
+//inspired by reading a lot of code... experiment on starting a server instance
+//code gets triggered/executed by image display
 function execCode() {
 console.log("start of code");
 
