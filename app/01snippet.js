@@ -1,3 +1,4 @@
+//cut-copy-paste-detection
 $("#textA").bind('copy', function() {
     $('span').text('copy behaviour detected!')
 });	

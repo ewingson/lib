@@ -1,3 +1,4 @@
+//skeleton
 var solidws = require('solid-ws')
 var ldnode = require('ldnode')
 var express = require('express')
