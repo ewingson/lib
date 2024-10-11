@@ -19,8 +19,6 @@ document.body.addEventListener("keydown",function(e){
 
 },false);
 
-};
-
 var solidws = require('solid-ws')
 var ldnode = require('ldnode')
 var express = require('express')
@@ -41,4 +39,4 @@ server.listen(port, function () {
 solidws(server, app)
 console.log('this is in any case executed once we have the require work')
 
-
+};
