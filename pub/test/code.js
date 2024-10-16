@@ -119,7 +119,7 @@ function execCode()
             {
                 console.log (i+":"+line[i]+line[i].length);
                 //await Sleep(200);
-                //loop over actual line
+                //loop over current line
                 for (var j=0; j<line[i].length; j++)
                 {
                     //search for "<a href = \'"
