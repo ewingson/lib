@@ -222,7 +222,7 @@ voc:details [
 voc:url "https://pod.liquid.surf/";
 voc:icon "not_provided";
 voc:policyURL "https://liquid.surf";
-voc:description "pod.liquid.surf is a public Solid Server (CSS) with an Penny-Frontend hosted in the U.S.A."
+voc:description "pod.liquid.surf is a public Solid Server (CSS) with an Penny-Frontend hosted in Germany."
 ] .
 
 <https://www.serverproject.de/ev/twentythree.html>
