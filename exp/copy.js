@@ -8,7 +8,7 @@ import {credentials} from '/home/evemat/Pod/.solid-identity.json';
 const loginSettings = credentials.solidCommunity;
 
 // Set paths to your files here
-const remoteUrl = `https://testpro.solidweb.org/public/ctest/john/test.ttl`;
+const remoteUrl = `https://testpro.solidweb.org/public/ctest/john/test3.ttl`;
 const localUrl =  `file://${process.cwd()}/test.html`;
 
 async function main(){
