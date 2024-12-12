@@ -1,6 +1,7 @@
   {
-         idp : "https://solidweb.org",
-    username : "ewingson",
-    password : "", // optional
-        base : ""
+         idp : "https://solidweb.me/",
+    username : "public-pod",
+    password : "black", // optional
+	//base = what/how
+        base : "parameter"
   }
