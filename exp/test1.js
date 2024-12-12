@@ -7,6 +7,7 @@ async function main(id) {
   // Function-level strict mode syntax
   "use strict";
   console.log('outer function called');
+  console.log(id);
   function second() {
     console.log('inner function called');
     const trust = "teststring";

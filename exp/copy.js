@@ -4,7 +4,7 @@ const auth = new SolidNodeClient();
 const fileClient = new SolidFileClient(auth);
 
 // Put your own functions for retrieving credentials here
-import {credentials} from '/home/evemat/Pod/.solid-identity.json';
+import {credentials} from '/home/evemat/Pod/solid-identity.json';
 const loginSettings = credentials.solidCommunity;
 
 // Set paths to your files here
