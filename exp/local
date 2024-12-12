@@ -1,3 +1,6 @@
 //login- and fetch-test with solid-auth-cli (https://github.com/jeff-zucker/solid-auth-cli, by Jeff Zucker, https://github.com/jeff-zucker)
 //caught in a login-error-loop
+//note on 2024-12-12 09:42:00GMT+01
+//using  /home/evemat/Dokumente/development/solid/dev/lib/exp/.solid-auth-cli-config.json
+//i.e. public pod credentials
 
