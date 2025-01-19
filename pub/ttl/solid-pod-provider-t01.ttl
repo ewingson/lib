@@ -162,7 +162,7 @@ voc:details [
 voc:url "https://solidcommunity.net:8443/";
 voc:icon "https://solid.inrupt.com/themes/custom/solid/logo.svg";
 voc:policyURL "https://solidcommunity.net:8443";
-voc:description "this is a public test instance of Node Solid Server."
+voc:description "this is a public test instance of Pivot, a CSS flavour."
 ] .
 
 <https://www.serverproject.de/ev/seventeen.html>
