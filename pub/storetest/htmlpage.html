@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<title>storetest</title>
+</head>
+<body>
+<script type="module">
+  import * as $rdf from "https://esm.sh/rdflib";
+  import {store} from "https://esm.sh/solid-logic";
+  async function testrun(url){
+  	try {
+      await store.fetcher.load(url,{ withCredentials:false });
+      document.body.innerHTML += '<p>fetcher.load succeeded!</p>';
+    }
+    catch(e) { document.body.innerHTML += `<p>fetcher.load failed! ${e}</p>`; }
+    try {
+      await store.fetcher.webOperation('GET',url,{ withCredentials:false });
+      document.body.innerHTML += '<p>fetcher.webOperation succeeded!</p>';
+    }
+    catch(e) { document.body.innerHTML += `<p>fetcher.webOperation failed! ${e}</p>`; }
+  }
+  async function storetest(url){
+    try {
+      await store.fetcher.load(url,{ withCredentials:false });
+      
+      //code goes here
+      //read name
+      //read webid
+      //read fn
+      //read prefs
+      //read public type index
+      //read private type index
+      //read storage
+      
+      //display html
+      //write output in public storage
+      
+      document.body.innerHTML += '<p>end of store test function reached</p>';
+    }
+    catch(e) { document.body.innerHTML += `<p>store test function failed! ${e}</p>`; }
+  }
+  testrun('https://solidweb.me/testpro-dev/profile/card#me');
+  storetest('https://solidweb.me/testpro-dev/profile/card#me');
+</script>
+<p>content</p>
+</body>
+</html>
