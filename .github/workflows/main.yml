@@ -1,0 +1,13 @@
+steps:
+  - name: Clone to Solid Pod
+    uses: o-development/clone-to-solid-pod@master
+    with:
+      # The URL of your Solid Identity Provider
+      solid-idp: ${{ secrets.SOLID_OIDC_ISSUER }}
+      
+      # Use the Client Credentials generated from CSS
+      solid-client-id: ${{ secrets.SOLID_CLIENT_ID }}
+      solid-client-secret: ${{ secrets.SOLID_CLIENT_SECRET }}
+      
+      # The destination path in your Pod
+      solid-shell-dest: "/stuff/cloned/"
