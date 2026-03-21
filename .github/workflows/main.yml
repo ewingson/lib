@@ -1,3 +1,4 @@
+jobs:
 steps:
   - name: Clone to Solid Pod
     uses: o-development/clone-to-solid-pod@master
