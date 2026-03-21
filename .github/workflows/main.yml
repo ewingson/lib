@@ -1,14 +1,22 @@
+name: Test
+
+on:
+  push:
+    branches:
+      - master
+
 jobs:
-steps:
-  - name: Clone to Solid Pod
-    uses: o-development/clone-to-solid-pod@master
-    with:
-      # The URL of your Solid Identity Provider
-      solid-idp: ${{ secrets.SOLID_OIDC_ISSUER }}
-      
-      # Use the Client Credentials generated from CSS
-      solid-client-id: ${{ secrets.SOLID_CLIENT_ID }}
-      solid-client-secret: ${{ secrets.SOLID_CLIENT_SECRET }}
-      
-      # The destination path in your Pod
-      solid-shell-dest: "/public/cloned/"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          path: "clone-to-solid-pod"
+      - uses: ./clone-to-solid-pod 
+        with:
+          input_path: /home/evemat/Dokumente/development/solid/dev/lib/
+          target_container: https://solidweb.me/testpro/public/cloned/
+          client_id: ${{ secrets.SOLID_CLIENT_ID }}
+          client_secret: ${{ secrets.SOLID_CLIENT_SECRET }}
+          oidc_issuer: https://solidweb.me/
