@@ -13,8 +13,8 @@ jobs:
         uses: actions/checkout@v2
       - uses: o-development/clone-to-solid-pod@master
         with:
-          input_path: /home/evemat/Dokumente/development/solid/dev/lib/
-          target_container: https://solidweb.me/testpro/public/cloned/
+          input_path: "/home/evemat/Dokumente/development/solid/dev/lib/"
+          target_container: "https://solidweb.me/testpro/public/cloned/"
           refresh_token: "undefined"
           client_id: ${{ secrets.INPUT_CLIENT_ID }}
           client_secret: ${{ secrets.INPUT_CLIENT_SECRET }}
