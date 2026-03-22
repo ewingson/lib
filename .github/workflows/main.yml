@@ -1,20 +1,14 @@
-name: pushToPod
-
-on:
-  push:
-    branches:
-      - master
-
-jobs:
-  pushToPod:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - uses: o-development/clone-to-solid-pod@master
-        with:
-          input_path: /home/evemat/Dokumente/development/solid/dev/lib/
-          target_container: https://solidweb.me/testpro/public/cloned/
-          client_id: ${{ secrets.SOLID_CLIENT_ID }}
-          client_secret: ${{ secrets.SOLID_CLIENT_SECRET }}
-          oidc_issuer: https://solidweb.me/
+- name: pushToPod
+  uses: o-development/clone-to-solid-pod@master
+  with:
+    # 1. Your Pod Server URL (OIDC Issuer)
+    solid-idp: ${{ secrets.SOLID_OIDC_ISSUER }} 
+    
+    # 2. The Client ID you generated
+    solid-client-id: ${{ secrets.SOLID_CLIENT_ID }}
+    
+    # 3. The Client Secret you generated
+    solid-client-secret: ${{ secrets.SOLID_CLIENT_SECRET }}
+    
+    # Destination in your Pod
+    solid-shell-dest: "/public/cloned/"
