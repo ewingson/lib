@@ -18,4 +18,4 @@ jobs:
           refresh_token: "undefined"
           client_id: ${{ secrets.INPUT_CLIENT_ID }}
           client_secret: ${{ secrets.INPUT_CLIENT_SECRET }}
-          oidc_issuer: https://solidweb.me/
+          oidc_issuer: "https://solidweb.me"
