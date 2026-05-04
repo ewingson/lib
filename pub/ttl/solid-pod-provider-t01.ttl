@@ -219,7 +219,7 @@ voc:description "brolly.id is a server for the AT protocol and the Solid protoco
 voc:id "22"^^xsd:string;
 dc:title "pivot-test.solidproject.org:8443/";
 voc:details [
-voc:url "https://privatedatapod.com/";
+voc:url "https://pivot-test.solidproject.org:8443/";
 voc:icon "not_provided";
 voc:policyURL "not_provided";
 voc:description "pivot-test.solidproject.org:8443 is a public test instance based on NSS hosted in the U.K."
