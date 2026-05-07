@@ -201,7 +201,7 @@ dc:title "solidweb.app";
 voc:details [
 voc:url "https://solidweb.app/";
 voc:icon "not_provided";
-voc:policyURL "not_provided";
+voc:policyURL "https://www.serverproject.de/files/solidweb_app_terms.txt";
 voc:description "solidweb.app is an experimental test server based on JSS and hosted in France."
 ] .
 
